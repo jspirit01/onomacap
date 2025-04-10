@@ -9,7 +9,7 @@ $(document).ready(function() {
 			slidesToShow: 1,
 			loop: true,
 			infinite: true,
-			autoplay: flase,
+			autoplay: true,
 			autoplaySpeed: 5000,
     }
 
