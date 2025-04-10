@@ -1082,15 +1082,15 @@ var Autoplay = function (_EventEmitter) {
 			this.stop();
 			if (this.slider.options.autoplay) {
 				this.emit('start', this);
-				this._interval = setInterval(function () {
-					if (!(_this2._hovering && _this2.slider.options.pauseOnHover)) {
-						if (!_this2.slider.options.centerMode && _this2.slider.state.next >= _this2.slider.state.length - _this2.slider.slidesToShow && !_this2.slider.options.loop && !_this2.slider.options.infinite) {
-							_this2.stop();
-						} else {
-							_this2.slider.next();
-						}
-					}
-				}, this.slider.options.autoplaySpeed);
+				// this._interval = setInterval(function () {
+				// 	if (!(_this2._hovering && _this2.slider.options.pauseOnHover)) {
+				// 		if (!_this2.slider.options.centerMode && _this2.slider.state.next >= _this2.slider.state.length - _this2.slider.slidesToShow && !_this2.slider.options.loop && !_this2.slider.options.infinite) {
+				// 			_this2.stop();
+				// 		} else {
+				// 			_this2.slider.next();
+				// 		}
+				// 	}
+				// }, this.slider.options.autoplaySpeed);
 			}
 		}
 	}, {
